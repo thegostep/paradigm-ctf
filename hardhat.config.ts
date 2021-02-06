@@ -8,6 +8,7 @@ import { HardhatUserConfig } from 'hardhat/types'
 
 import './task/hello'
 import './task/market'
+import './task/babysandbox'
 
 export default {
   networks: {
