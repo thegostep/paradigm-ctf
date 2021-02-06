@@ -66,12 +66,9 @@ task('market')
     const tokenID_sub1 = BigNumber.from(tokenID).sub(1).toHexString()
     const tokenID_sub2 = BigNumber.from(tokenID).sub(2).toHexString()
 
-    // minMintPrice = (sentValue * 10000) / (10000 + mintFeeBps)
-    // sentValue = minMintPrice * (10000 + mintFeeBps) / 10000
-    const value = (await market.minMintPrice())
-      .mul((await market.mintFeeBps()).add(10000))
-      .div(10000)
-    // const value = parseEther('5')
+    // solved by plugging in: 2*floor((y * 10000) / (10000 + 1000)) = 50*10^18+y
+    // to wolfram alpha
+    const value = parseEther('61.111111111111111112')
     await market.mintCollectible({ value })
 
     console.log('NFT')

@@ -17,11 +17,9 @@ export default {
         url: process.env.ETHEREUM_ARCHIVE_URL,
       },
     },
-    hello: {
-      url: 'http://104.197.147.133:8545/866e3120-303e-478f-abef-ad51402a1407',
-      accounts: [
-        '0x62f12a51b88ae9348bc83ba7c7df090a475c8209244c6835b82abf6980c8a4f3',
-      ],
+    paradigm: {
+      url: process.env.PARADIGM_RPC,
+      accounts: [process.env.PARADIGM_PRIVATE_KEY],
     },
   },
   solidity: {
