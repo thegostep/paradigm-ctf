@@ -8,6 +8,6 @@
     "downlevelIteration": true,
     "outDir": "dist"
   },
-  "include": ["test"],
+  "include": ["test", "task"],
   "files": ["hardhat.config.ts"]
 }
