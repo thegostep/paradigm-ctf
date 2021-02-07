@@ -9,6 +9,7 @@ import { HardhatUserConfig } from 'hardhat/types'
 import './task/hello'
 import './task/market'
 import './task/babysandbox'
+import './task/broker'
 
 export default {
   networks: {
@@ -33,6 +34,9 @@ export default {
       },
       {
         version: '0.5.12',
+      },
+      {
+        version: '0.4.16',
       },
     ],
   },
