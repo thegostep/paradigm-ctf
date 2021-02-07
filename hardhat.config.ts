@@ -13,6 +13,7 @@ import './task/yield'
 import './task/farmer'
 import './task/upgrade'
 import './task/bouncer'
+import './task/lockbox'
 
 export default {
   networks: {
@@ -33,6 +34,9 @@ export default {
         version: '0.8.0',
       },
       {
+        version: '0.7.6',
+      },
+      {
         version: '0.7.0',
       },
       {
@@ -40,6 +44,9 @@ export default {
       },
       {
         version: '0.5.12',
+      },
+      {
+        version: '0.4.24',
       },
       {
         version: '0.4.16',
