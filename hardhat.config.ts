@@ -11,6 +11,7 @@ import './task/market'
 import './task/broker'
 import './task/yield'
 import './task/farmer'
+import './task/upgrade'
 
 export default {
   networks: {
@@ -28,13 +29,13 @@ export default {
   solidity: {
     compilers: [
       {
+        version: '0.8.0',
+      },
+      {
         version: '0.7.0',
       },
       {
-        version: '0.7.6',
-      },
-      {
-        version: '0.8.0',
+        version: '0.6.12',
       },
       {
         version: '0.5.12',
