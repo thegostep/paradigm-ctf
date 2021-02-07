@@ -10,6 +10,7 @@ import './task/hello'
 import './task/market'
 import './task/broker'
 import './task/yield'
+import './task/farmer'
 
 export default {
   networks: {
