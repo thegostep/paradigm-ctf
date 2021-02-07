@@ -12,6 +12,7 @@ import './task/broker'
 import './task/yield'
 import './task/farmer'
 import './task/upgrade'
+import './task/bouncer'
 
 export default {
   networks: {
